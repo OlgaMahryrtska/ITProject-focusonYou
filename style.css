@@ -1,7 +1,7 @@
 /*Theme Name: focusonYou
 Theme URI:focusonYou.pl
 Description: The own theme for wordPress
-Authors: Anna Shevchenko, Maria Hodis, Olga Magrytska, Yulia Pavliuk
+Authors: Anna Shevchenko, Mariia Hodis, Olga Magrytska, Yuliia Pavliuk
 Version:1
 */
 
@@ -28,6 +28,8 @@ body{
    list-style-type: none;
  }
 
+
+
  .footer_class {
    background-color:white;
   width: 100%;
@@ -40,7 +42,7 @@ body{
   overflow: hidden;
 }
 .footer_menu_1{
-  padding-left: 300px;
+  padding-left: 420px;
 }
 .footer_class a{
   color: #0e0b2b;
@@ -90,20 +92,24 @@ button{
 #description{
   text-align: center;
 }
-#slider{
+/*#slider{
     margin-left: 15%;
     width: 75%;
     height:300px;
     background: gray;
+}*/
+.img{
+  height:300px;
+  width:670px;
 }
 
-#slider_partners{
+/*#slider_partners{
     margin-left: 15%;
     width: 75%;
     height:100px;
     background: gray;
     margin-bottom: 2%;
-}
+}*/
 button:hover{
   background-color: #ff8500 ;
   border-color: orange;
@@ -263,7 +269,7 @@ hr {
     }
   
     .container_2 {
-      margin: 130px 20px 100px 20px;
+
       padding: 20px;
       background-color:#0e0b2b ;
       color: white;
@@ -278,10 +284,13 @@ hr {
     
     .two {
       float: right;
+      text-align: left;
     }
     .course-logo-text {
-      margin-top: 5px;
+      margin-top: 50px;
+	  text-align: center;
       margin-bottom: 10px;
+	
     }
     .read_more{
       display: inline-block;
