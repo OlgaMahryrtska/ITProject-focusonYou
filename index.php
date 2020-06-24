@@ -8,35 +8,22 @@
     <title><?php the_title(); ?></title>
     <?php wp_head(); ?>
 </head>
+<header class="header">
+
+</header>
+
 
 <body <?php body_class(); ?>>
 
 
-    <header class="header">
-
-    </header>
-
-
-
-
     <div class="middle">
-        <?php
-        // циклы вывода записей
-        // если записи найдены
-        if (have_posts()) {
-            while (have_posts()) {
-                the_post();
+        <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : the_post(); ?>
+            <?php endwhile; ?>
+        <?php endif; ?>
+        <p> <a href="<?php the_permalink(); ?>"></a></p>
 
-                echo '<h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>';
-
-                echo get_the_excerpt();
-            }
-        }
-        // елси записей не найдено
-        else {
-            echo ' <p>Записей нет...</p>';
-        }
-        ?>
+        <p><?php the_content(); ?></p>
     </div>
 
 
